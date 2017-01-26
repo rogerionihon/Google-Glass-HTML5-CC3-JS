@@ -5,5 +5,5 @@
 <b>Desenvolvimento de Web Site utilizando<b> <br/>
 
 HTML5<br/>
-CC3<br/>
+CSS3<br/>
 JavaScript<br/>

@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+/* configuracao textual*/
+body{
+	background-color: white;
+	color: rgba(0,0,0,1);
+}
+p{
+	text-align: justify;
+	text-indent: 50px;
+}
+
+/* configurando a borda*/
+figure.foto-legenda{
+	position: relative;
+	border: 8px solid white;
+	box-shadow: 1px 1px 4px black;
+	display: inline-block;
+}
+
+/* conigurando o tamanho da borda*/
+figure.foto-legenda img {
+	width: 100%;
+	height: 100%;
+}
+
+/* configurando o figcapiton*/
+figure.foto-legenda figcaption{
+	position: absolute;
+	opacity: 0;
+	top:0px;
+	background-color: rgba(0,0,0,.4);
+	color: white;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	transition: opacity 1s;
+}
+
+/* configurando sobreposicao do mouse*/
+figure.foto-legenda:hover figcaption{
+	opacity: 1;
+}
+
+/* configurando o menu*/
+nav#menu{
+	display: block;
+}
+
+/* configurando itens do menu*/
+nav#menu ul {
+	list-style: none;
+	text-transform: uppercase;
+	position: absolute;
+	top: -20px;
+	left: 700px;
+}
+
+/* configurando a lista do menu*/
+nav#menu li {
+	display: inline-block;;
+	background-color: #dddddd;
+	padding: 10px;
+	margin: 4px;
+}
+
+/* configurando H1*/
+nav#menu h1{ 
+	display: none;
+}
