@@ -1,4 +1,4 @@
-# Google-Glass-HTML5-CC3-JS
+# Google-Glass-HTML5-CSS3-JS
 
 <b>Projeto Google-Glass</b> <br/>
 
