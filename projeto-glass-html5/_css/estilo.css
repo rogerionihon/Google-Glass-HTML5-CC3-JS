@@ -43,7 +43,7 @@ figure.foto-legenda:hover figcaption{
 	opacity: 1;
 }
 
-/* configurando o menu*/
+/* configurando o menu flutuante*/
 nav#menu{
 	display: block;
 }
@@ -63,9 +63,34 @@ nav#menu li {
 	background-color: #dddddd;
 	padding: 10px;
 	margin: 4px;
+
+	/* para efetuar a transicao em todos os navegadores*/
+
+	-webkit-transition: background-color 1s
+    -moz-transition: background-color 1s
+    -ms-transition: background-color 1s
+     -o-transition: background-color 1s
+        transition: background-color 1s
 }
 
-/* configurando H1*/
+/* configurando transicao de cor do menu*/
+nav#menu li:hover{
+	background-color: #606060; 
+}
+
+/* configurando H1 para esconder*/
 nav#menu h1{ 
 	display: none;
+}
+
+/* configurando os links do menu*/
+nav#menu a{
+	color: #000000;
+	text-decoration: none;
+}
+
+/* configurando a transicao de cor dos links do menu*/
+nav#menu a:hover{
+	color: #ffffff;
+	text-decoration: underline;
 }
