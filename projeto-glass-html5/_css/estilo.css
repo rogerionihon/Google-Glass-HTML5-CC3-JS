@@ -145,3 +145,53 @@ nav#menu a:hover{
 	color: #ffffff;
 	text-decoration: underline;
 }
+
+/* configurante as posicoes da tela*/
+/*configurando o corpo do texto*/
+section#corpo{
+	display: block;
+	width: 650px;
+	float: left;
+	border-right: 1px solid #606060;
+	padding: 15px;
+}
+
+/*configurando a tabela especificacoes*/
+table#tablespec{
+	border: 1px solid #606060;
+	border-spacing: 0px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+table#tablespec td{
+	border: 1px solid #606060;
+	padding: 10px;
+	text-align: center;
+}
+section#corpo_spec{
+	display: block;
+	
+	float: top;
+}
+/*configurando a lateral do texto*/
+aside#lateral{
+	display: block;
+	width: 440px;
+	float: right;
+}
+
+aside#lateral_spec{
+	display: block;
+	float: top;
+}
+/*configurando o rodape do texto*/
+footer#rodape{
+	clear: both;
+	border-top: 1px solid #606060;
+}
+
+/*centralizando conteudo do rodape*/
+footer#rodape h4{
+	text-align: center;
+}
