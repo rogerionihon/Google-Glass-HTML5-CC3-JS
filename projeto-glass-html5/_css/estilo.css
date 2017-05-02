@@ -14,6 +14,7 @@
 body{
 	background-color: #dddddd;
 	color: rgba(0,0,0,1);
+	font-family: Arial, sans-serif;
 }
 
 /*configuracao da div com id interface*/
@@ -61,6 +62,16 @@ p{
 	text-indent: 50px;
 }
 
+/*configuracao dos links fora do menu*/
+a{
+	color: #606060;
+	text-decoration: none;	
+}
+
+/*efeitos dos links fora do menu*/
+a:hover{
+	text-decoration: underline;
+}
 /* configurando a borda*/
 figure.foto-legenda{
 	position: relative;
@@ -105,7 +116,7 @@ nav#menu ul {
 	text-transform: uppercase;
 	position: absolute;
 	top: -20px;
-	left: 700px;
+	left: 650px;
 }
 
 /* configurando a lista do menu*/
@@ -146,17 +157,7 @@ nav#menu a:hover{
 	text-decoration: underline;
 }
 
-/* configurante as posicoes da tela*/
-/*configurando o corpo do texto*/
-section#corpo{
-	display: block;
-	width: 650px;
-	float: left;
-	border-right: 1px solid #606060;
-	padding: 15px;
-}
-
-/*configurando a tabela especificacoes*/
+/*configurando a tabela especificacoes tecnicas*/
 table#tablespec{
 	border: 1px solid #606060;
 	border-spacing: 0px;
@@ -169,21 +170,135 @@ table#tablespec td{
 	padding: 10px;
 	text-align: center;
 }
-section#corpo_spec{
-	display: block;
-	
-	float: top;
-}
-/*configurando a lateral do texto*/
-aside#lateral{
-	display: block;
-	width: 440px;
-	float: right;
+
+/*configurando as class das colunas*/
+
+/*configurando a class columnleft*/
+table#tablespec td.columnleft{
+	color: #ffffff;
+	background-color: #606060;
+	font-weight: bold;
+	vertical-align: top;
+	text-align: right;
 }
 
+/*configurando a class columnright*/
+table#tablespec td.columnright{
+	background-color: #cecece;
+	text-align: left;
+}
+
+/*configurando o caption*/
+table#tablespec caption{
+	color: #888888;
+	font-size: 10pt;
+	font-weight: bolder;
+}
+/*configurando o span do caption*/
+table#tablespec caption span{
+	display: block;
+	float: right;
+	font-size: 8pt;
+	color: #000000;
+	margin-top: 10px;
+}
+
+/* configurante as posicoes da tela*/
+
+/*configurando o corpo do texto no index*/
+section#corpo{
+	display: block;
+	width: 665px;
+	float: left;
+	border-right: 1px solid #606060;
+	padding:5px;
+	padding-right: 10px;
+}
+
+article#noticia-principal h2{
+	font-size: 12pt;
+	color: #606060;
+	background-color: #dddddd;
+	padding: 5px 0px 5px 0px;
+	margin: 10px 0px 10 px 0px;
+	padding-left: 10px;
+}
+
+header#cabecalho-artigo h1{
+	font-family: 'FonteLogo' sans-serif;
+	font-size: 20pt;
+	color: #606060;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+header#cabecalho-artigo h2{
+	font-size: 13pt;
+	color: #cecece;
+	background-color: #ffffff;
+	margin: 0px;
+}
+header#cabecalho-artigo h3{
+	font-size: 12pt;
+	color: #606060;
+}
+.direita{
+	text-align: right;
+}
+/*configurando a lateral do texto no index*/
+aside#lateral{
+	display: block;
+	width: 430px;
+	float: right;
+	background-color: #dddddd;
+	padding: 10px;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+}
+
+/*configurando aside h1*/
+aside#lateral h1{
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 20pt;
+	color: #606060;
+	margin-top: 0px;
+}
+/*configurando aside h2*/
+aside#lateral h2{
+	background-color: #606060;
+	font-size: 12pt;
+	color: #ffffff;
+	padding: 5px;
+}
+
+/*configurando o corpo do texto no spec*/
+section#corpo_spec{
+	display: block;
+	width: 500px;
+	float: left;
+	padding: 20px;
+}
+
+/*configurando a lateral do texto no spec*/
 aside#lateral_spec{
 	display: block;
-	float: top;
+	width: 400px;
+	float: right;
+	padding-right: 10px; 
+	margin-right: 60px;
+	margin-bottom: 20px;
+}
+
+/*configurando o corpo do texto no fotos*/
+section#corpo_fotos{
+	width: 1138px;
+	display: block;
+	font-size: 12.5pt;
+	font-family: arial normal, sans-serif;
+	margin-right: auto;
+	float: left;
+}
+/*configurando a lateral do texto no fotos*/
+aside#lateral_fotos{
+	
 }
 /*configurando o rodape do texto*/
 footer#rodape{
@@ -195,3 +310,4 @@ footer#rodape{
 footer#rodape h4{
 	text-align: center;
 }
+

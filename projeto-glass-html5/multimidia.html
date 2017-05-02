@@ -5,43 +5,50 @@
 	<title>Galeria de Imagens do Google Glass</title>
 	<link rel="stylesheet" type="text/css" href="_css/estilo.css">
 </head>
-	<body>
-		<div id="interface">
-			<header id="cabecalho">
+<script language="javascript" type="text/javascript" src="_javascript/funcoes.js"></script>
 
-			<hgroup>
-				<h1>Google Glass</h1>
-				<h2>A revolução do Google está chegando</h2>
+<body>
+	<div id="interface">
+		<header id="cabecalho">
+
+		<hgroup>
+			<h1>Google Glass</h1>
+			<h2>A revolução do Google está chegando</h2>
 				
-			</hgroup>
+		</hgroup>
+<img id="icone" src="_imagens/multimidia.png"/>
 
 <nav id="menu">
 	<h1>Menu Principal</h1>
 	<ul type="square">
-		<li><a href="index.html">Home</a></li>
-		 <li><a href="specs.html">Especificações</a></li>
-		 <li><a href="fotos.html">Fotos</a></li>
-		 <li><a href="multimidia.html">Multimídia</a></li>
-		 <li><a href="fale-conosco.html">Fale conosco</a></li>
+		<li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="index.html">Home</a></li>
+		<li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="specs.html">Especificações</a></li>
+		<li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="fotos.html">Fotos</a></li>
+		<li><a href="multimidia.html">Multimídia</a></li>
+		<li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="fale-conosco.html">Fale conosco</a></li>
 	</ul>
 </nav>
-			</header>
+		</header>
 
+<article id="noticia-principal">
+<header id="cabecalho-artigo">
 <hgroup>
-	<h3 style="color: #bbbbbb">Glass > Multimídia,</h3>
-	<h2>Sons e Vídeos</h2>
-	<h4 style="color: #bbbbbb">por Rogerio Jesus</h4>
-	<h4 style="text-align: right;">Atualizado em 02/Abril/2017</h4>
+	<h3>Glass > Multimídia,</h3>
+	<h1>Sons e Vídeos</h1>
+	<h2>por Rogerio Jesus</h2>
+	<h3 class="direita">Atualizado em 24/Abril/2017</h3>
 </hgroup>
-
+</header>
+</article>
 Áudio e Vídeo
 
 [AQUI ENTRA UM VÍDEO]
 [AQUI ENTRA UM ÁUDIO]
-
-			<h4 style="text-align: center;"> &copy; Copyright 2017- <em>by</em> Rogerio Jesus</br> </h4>
-			<h4 style="text-align: center;">Facebook | Twitter</h4>
-			
+<footer id="rodape">
+			<h4> &copy; Copyright 2017- <em>by</em> Rogerio Jesus</br> </h4>
+			<h4><a href="https://www.facebook.com" target="_blanck">Facebook</a> | 
+			<a href="https://www.twitter.com" target="_blanck">Twitter</a></h4>
+</footer>			
 		</div>
 	</body>
 </html>
